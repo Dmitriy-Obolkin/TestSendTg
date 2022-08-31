@@ -37,6 +37,13 @@
 		const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
 		let CHAT_ID = "";
 		
+		function sleep(milliseconds) {
+						  const date = Date.now();
+						  let currentDate = null;
+						  do {
+						    currentDate = Date.now();
+						  } while (currentDate - date < milliseconds);
+						}
 		
 		
 		
@@ -67,6 +74,7 @@
 					
 					case '5':  
 						CHAT_ID = "-658498422";
+						sleep(3500);
 					break;
 						
 					case '6':  
